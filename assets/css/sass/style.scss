@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush|Dosis:400,700|Raleway:400,700|Caveat:400,700');
+@import 'mixins';
+@import 'variables';
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+.dosis {
+    font-family: 'Dosis', sans-serif;
+}
+.alex-brush {
+    font-family: 'Alex Brush', cursive;
+}
+.caveat {
+    font-family: 'Caveat', cursive;
+}
+.raleway {
+    font-family: 'Raleway', sans-serif;
+}
+.save-the-date-title {
+    font-size: 2.5rem;
+    @include md {
+        font-size: 4rem;
+    }
+    @include lg {
+        font-size: 4.5rem;
+    }
+}
+.word-wrap {
+    word-wrap: break-word;
+}
+.bride-groom {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 500;
+}
+.event-action-group {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.black-transparent {
+    background: transparentize(#000, .7)
+}
