@@ -8,3 +8,7 @@ window.onscroll = function () {
 particlesJS.load('particles-js', './assets/particles.json', function() {
     console.log('callback - particles.js config loaded');
 });
+
+$('#particles-js').on('contextmenu', function (e) {
+    e.preventDefault();
+})
