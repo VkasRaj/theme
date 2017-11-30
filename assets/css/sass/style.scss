@@ -30,6 +30,14 @@ html, body {
 .word-wrap {
     word-wrap: break-word;
 }
+.carousel-item {
+    background-color: rgba(0,0,0,.3);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+}
 .bride-groom {
     top: 50%;
     left: 50%;
