@@ -38,6 +38,36 @@ html, body {
     background-attachment: fixed;
     background-blend-mode: soft-light;
 }
+.scroll-to-down {
+    height: 2.3rem;
+    width: 2.3rem;
+    cursor: pointer;
+    background: #fff;
+    animation: upDown 1s ease-in-out infinite alternate;
+    @keyframes upDown {
+        100% {
+            transform: translateY(.8rem)       
+        }
+    }
+    &:after {
+      content: '';
+      height: 0;
+      width: 0;
+      border-top: .4rem solid #333;
+      border-right: .4rem solid transparent;
+      border-left: .4rem solid transparent;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-40%);
+    }
+    &:hover {
+        background: #333;
+        &:after {
+            border-top-color: #fff;
+        }
+    }
+}
 .bride-groom {
     top: 50%;
     left: 50%;
@@ -68,4 +98,7 @@ html, body {
   top: 0;
   left: 0;
   z-index: -1;
+}
+.pointer {
+    cursor: pointer;
 }

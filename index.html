@@ -15,25 +15,25 @@
     <div id="particles-js"></div>
 
     <!-- --------------------------- navbar --------------------------- -->
+    <!-- <a class="navbar-brand ml-2 ml-md-0" href="#">Navbar</a> -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-1 p-md-3">
-        <div class="container rounded black-transparent p-2 p-md-0">
-            <!-- <a class="navbar-brand ml-2 ml-md-0" href="#">Navbar</a> -->
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar-content">
+        <div class="container p-1 p-md-0">
+            <button class="navbar-toggler ml-auto bg-info border-0 px-2 rounded-0 shadow-1" type="button" data-toggle="collapse" data-target="#navbar-content">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbar-content">
+            <div class="collapse navbar-collapse black-transparent rounded" id="navbar-content">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item px-2 mx-1 active">
-                        <a href="#0" class="nav-link text-uppercase raleway">Home</a>
+                        <a class="nav-link text-uppercase raleway pointer" data-target="#theme-carousel">Home</a>
                     </li>
                     <li class="nav-item px-2 mx-1">
-                        <a href="#0" class="nav-link text-uppercase raleway">Events</a>
+                        <a class="nav-link text-uppercase raleway pointer" data-target="#events">Events</a>
                     </li>
                     <li class="nav-item px-2 mx-1">
-                        <a href="#0" class="nav-link text-uppercase raleway">Wishes</a>
+                        <a class="nav-link text-uppercase raleway pointer" data-target="#gallery">Gallery</a>
                     </li>
                     <li class="nav-item px-2 mx-1">
-                        <a href="#0" class="nav-link text-uppercase raleway">Gallery</a>
+                        <a class="nav-link text-uppercase raleway pointer" data-target="#wishes">Wishes</a>
                     </li>
                 </ul>
             </div>
@@ -44,9 +44,10 @@
     <div class="carousel slide mb-4 mb-md-5 h-100 position-relative" id="theme-carousel">
         <!-- carousel-indicators -->
         <ol class="carousel-indicators">
-            <li id="theme-carousel" data-slide-to="0" data-target="#theme-carousel"></li>
+            <div class="scroll-to-down rounded-circle shadow-1"></div>
+            <!-- <li id="theme-carousel" data-slide-to="0" data-target="#theme-carousel"></li>
             <li id="theme-carousel" data-slide-to="1" data-target="#theme-carousel"></li>
-            <li id="theme-carousel" data-slide-to="2" data-target="#theme-carousel"></li>
+            <li id="theme-carousel" data-slide-to="2" data-target="#theme-carousel"></li> -->
         </ol>
         <!-- carousel-images -->
         <div class="carousel-inner h-100">
@@ -86,7 +87,7 @@
     </div>
      
     <!-- --------------------------- greetings --------------------------- -->
-    <div class="container mb-4 pt-4">
+    <div class="container mb-4 pt-4 greetings-wrapper">
         <div class="row">
             <div class="col-12 col-md-8 offset-md-2 text-center">
                 <p class="caveat h1 word-wrap">Dear, Guest Name</p>
@@ -128,7 +129,7 @@
     </div>
     
     <!-- --------------------------- Events --------------------------- -->
-    <div class="container events-wrapper mb-5 pt-4">
+    <div class="container mb-5 pt-4 events-wrapper" id="events">
         <div class="row justify-content-center">
             <div class="col-12 mb-3">
                 <p class="h2 text-center dosis text-secondary">Events</p>
@@ -180,7 +181,7 @@
     </div>
 
     <!-- --------------------------- Gallery --------------------------- -->
-    <div class="container mb-5 pt-4">
+    <div class="container mb-5 pt-4 gallery-wrapper" id="gallery">
         <div class="row">
             <div class="col-12 mb-3">
                 <p class="h2 text-center dosis text-secondary">Gallery</p>
@@ -249,6 +250,15 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------- Wishes --------------------------- -->
+    <div class="container mb-5 pt-4 wishes-wrapper" id="wishes">
+        <div class="row">
+            <div class="col-12">
+                
             </div>
         </div>
     </div>
