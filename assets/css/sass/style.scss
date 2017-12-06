@@ -102,3 +102,38 @@ html, body {
 .pointer {
     cursor: pointer;
 }
+.bride-groom .container {
+    &::before {
+        content: '';
+        height: 10rem;
+        width: 80%;
+        background: url('../images/upper-pattern.png') no-repeat center;
+        background-size: contain;
+        filter: drop-shadow(0 .2rem .3rem rgba(0,0,0,.3));
+        position: absolute;
+        top: -40%;
+        left: 50%;
+        transform: translateX(-50%);
+        @include md {
+            width: 45%;
+            top: -130%;
+        }
+    }
+    &::after {
+        content: '';
+        height: 10rem;
+        width: 80%;
+        background: url('../images/lower-pattern.png') no-repeat center;
+        background-size: contain;
+        filter: drop-shadow(0 .2rem .3rem rgba(0,0,0,.3));
+        position: absolute;
+        bottom: -35%;
+        left: 50%;
+        transform: translateX(-50%);
+        @include md {
+            width: 45%;
+            bottom: -130%;
+        }
+    }
+    
+}
