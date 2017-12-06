@@ -80,7 +80,10 @@ html, body {
     transform: translate(-50%,0);
 }
 .black-transparent {
-    background: transparentize(#000, .7)
+    background: transparentize(#000, .5);
+    @include md {
+        background: transparentize(#000, .7);
+    }
 }
 .gallery-item {
     height: 10rem;
@@ -106,12 +109,12 @@ html, body {
     &::before {
         content: '';
         height: 10rem;
-        width: 80%;
+        width: 90%;
         background: url('../images/upper-pattern.png') no-repeat center;
         background-size: contain;
         filter: drop-shadow(0 .2rem .3rem rgba(0,0,0,.3));
         position: absolute;
-        top: -40%;
+        top: -45%;
         left: 50%;
         transform: translateX(-50%);
         @include md {
@@ -122,12 +125,12 @@ html, body {
     &::after {
         content: '';
         height: 10rem;
-        width: 80%;
+        width: 90%;
         background: url('../images/lower-pattern.png') no-repeat center;
         background-size: contain;
         filter: drop-shadow(0 .2rem .3rem rgba(0,0,0,.3));
         position: absolute;
-        bottom: -35%;
+        bottom: -38%;
         left: 50%;
         transform: translateX(-50%);
         @include md {
