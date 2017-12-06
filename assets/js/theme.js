@@ -1,6 +1,12 @@
 // loading particles
 particlesJS.load('particles-js', './assets/particles.json');
 
+// carousel settings
+$('.carousel').carousel({
+    interval: 3000,
+    pause: false
+})
+
 // making slider parallax
 window.onscroll = function () {
     var wScroll = $(window).scrollTop();

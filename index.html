@@ -97,7 +97,7 @@
     </div>
     
     <!-- --------------------------- save the date --------------------------- -->
-    <div class="container mb-5 pt-4 save-the-date-wrapper">
+    <div class="container mb-3 mb-md-5 pt-4 save-the-date-wrapper">
         <div class="row">
             <div class="col-12">
                 <div class="save-the-date">
@@ -129,7 +129,7 @@
     </div>
     
     <!-- --------------------------- Events --------------------------- -->
-    <div class="container mb-5 pt-4 events-wrapper" id="events">
+    <div class="container mb-3 mb-md-5 pt-4 events-wrapper" id="events">
         <div class="row justify-content-center">
             <div class="col-12 mb-3">
                 <p class="h2 text-center dosis text-secondary">Events</p>
@@ -181,7 +181,7 @@
     </div>
 
     <!-- --------------------------- Gallery --------------------------- -->
-    <div class="container mb-5 pt-4 gallery-wrapper" id="gallery">
+    <div class="container mb-3 mb-md-5 pt-4 gallery-wrapper" id="gallery">
         <div class="row">
             <div class="col-12 mb-3">
                 <p class="h2 text-center dosis text-secondary">Gallery</p>
@@ -255,17 +255,80 @@
     </div>
 
     <!-- --------------------------- Wishes --------------------------- -->
-    <div class="container mb-5 pt-4 wishes-wrapper" id="wishes">
+    <div class="container mb-3 mb-md-5 pt-4 wishes-wrapper" id="wishes">
         <div class="row">
             <div class="col-12 mb-3">
                 <p class="h2 text-center dosis text-secondary">Wishes</p>
                 <hr class="w-25">
             </div>
+            <div class="col-12 text-center">
+                <button class="btn btn-outline-primary btn-rounded pointer" data-toggle="modal" data-target="#addWishes"><span>&plus;</span> Your Wishes</button>
+            </div>
+            <div class="col-12 col-md-8 mx-auto mt-4">
+                <div class="row">
+                    <div class="col-12" id="wishes-bubbles">
+                        <div class="alert alert-secondary">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing el
+                            <div class="d-flex justify-content-between align-items-center pt-1">
+                                <small>Time</small>
+                                <i class="fa fa-trash text-danger p-1 pointer"></i>
+                            </div>
+                        </div>
+                        <div class="alert alert-secondary">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing el
+                            <div class="d-flex justify-content-between align-items-center pt-1">
+                                <small>Time</small>
+                                <i class="fa fa-trash text-danger p-1 pointer"></i>
+                            </div>
+                        </div>
+                        <div class="alert alert-secondary">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing el
+                            <div class="d-flex justify-content-between align-items-center pt-1">
+                                <small>Time</small>
+                                <i class="fa fa-trash text-danger p-1 pointer"></i>
+                            </div>
+                        </div>
+                        <div class="alert alert-secondary">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing el
+                            <div class="d-flex justify-content-between align-items-center pt-1">
+                                <small>Time</small>
+                                <i class="fa fa-trash text-danger p-1 pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
    
+    <!-- --------------------------- Modals Section --------------------------- -->
 
+    <!-- Add Wishes Modal -->
+    <div class="modal fade" id="addWishes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h6 class="modal-title" id="exampleModalLabel">Your Wishes to the Couple</h6>
+                    <button type="button" class="close pointer" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body pb-0">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Guest Name">
+                    </div>
+                    <div class="form-group">
+                        <textarea style="height: 130px;" type="password" class="form-control" id="exampleInputPassword1" placeholder="Your Message...."></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 pt-0">
+                    <button type="button" class="btn btn-outline-secondary btn-rounded pointer" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success btn-rounded pointer">Post Wishes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
