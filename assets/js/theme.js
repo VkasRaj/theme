@@ -23,9 +23,11 @@ $('.scroll-to-down').click(function () {
 
 // scroll to destination when nav link is click
 $('.nav-link').click(function () {
-    var t = $(this).attr('data-target');
+    var t = $(this);
+    $('.nav-item').removeClass('active');
+    $('.nav-item').eq($('.nav-link').index(t)).addClass('active');
     // history.pushState({}, "page"+($('.nav-link').index($(this))+1), (t).slice(1)); // changing url based on content; == giving error on reload
     $('html,body').animate({
-        scrollTop : $(t).offset().top - 100
+        scrollTop : $($(t).attr('data-target')).offset().top - 100
     }, 1200)
 })
