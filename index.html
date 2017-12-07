@@ -11,10 +11,10 @@
 </head>
 <body>
 
-    <!-- --------------------------- Particles --------------------------- -->
+    <!-- =============== Particles =============== -->
     <div id="particles-js"></div>
 
-    <!-- --------------------------- navbar --------------------------- -->
+    <!-- =============== navbar =============== -->
     <!-- <a class="navbar-brand ml-2 ml-md-0" href="#">Navbar</a> -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-1 p-md-3">
         <div class="container p-1 p-md-0">
@@ -40,7 +40,7 @@
         </div>
     </nav>
 
-    <!-- --------------------------- slider --------------------------- -->
+    <!-- =============== slider =============== -->
     <div class="carousel slide mb-4 mb-md-5 h-100 position-relative" id="theme-carousel">
         <!-- carousel-indicators -->
         <ol class="carousel-indicators">
@@ -73,114 +73,81 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-md-5 display-5 alex-brush text-center text-md-right word-wrap">
-                        <p>Lorem</p>
+                        <p id='hpHeading1'></p>
                     </div>
                     <div class="col-12 col-md-2 dosis text-center h3">
-                        <p>weds</p>
+                        <p id="hpHeading2"></p>
                     </div>
                     <div class="col-12 col-md-5 display-5 alex-brush text-center text-md-left word-wrap">
-                        <p>Ipsum</p>
+                        <p id="hpHeading3"></p>
+                    </div>
+                    <div class="custom-text col-12 text-center">
+                        <hr class="w-25 border-white">
+                        <p id="custom-text" class="dosis h5"></p>
+                        <p id="custom-date" class="dosis h2"></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
      
-    <!-- --------------------------- greetings --------------------------- -->
+    <!-- =============== greetings =============== -->
     <div class="container mb-4 pt-4 greetings-wrapper">
         <div class="row">
             <div class="col-12 col-md-8 offset-md-2 text-center">
-                <p class="caveat h1 word-wrap">Dear, Guest Name</p>
-                <p class="lead raleway pt-2 word-wrap text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consectetur veniam, ipsa minus libero itaque iusto neque labore debitis nam.</p>
+                <p class="caveat h1 word-wrap" id="greeting-msg-title"></p>
+                <p class="lead raleway pt-2 word-wrap text-dark" id="greeting-msg-text"></p>
             </div>
         </div>
     </div>
-    
-    <!-- --------------------------- save the date --------------------------- -->
+
+    <!-- =============== save the date =============== -->
     <div class="container mb-3 mb-md-5 pt-4 save-the-date-wrapper">
         <div class="row">
             <div class="col-12">
                 <div class="save-the-date">
-                    <p class="h2 text-center dosis text-secondary">Save the Date</p>
+                    <p class="h2 text-center dosis text-secondary" id="invite-date-heading">Save the Date</p>
                     <hr class="w-25">
-                    <p class="save-the-date-title text-center alex-brush">August 10th 2015</p>
+                    <p class="save-the-date-title text-center alex-brush" id="invite-date">August 10th 2015</p>
                     <!-- <p class="text-center">6:00 pm</p> -->
                 </div>
-                <div class="timer row">
-                    <div class="col-6 col-sm-3 text-center">
-                        <p class="h1 text-dark caveat">178</p>
-                        <p class="raleway h5 text-muted">Days</p>
-                    </div>
-                    <div class="col-6 col-sm-3 text-center">
-                        <p class="h1 text-dark caveat">04</p>
-                        <p class="raleway h5 text-muted">Hours</p>
-                    </div>
-                    <div class="col-6 col-sm-3 text-center">
-                        <p class="h1 text-dark caveat">15</p>
-                        <p class="raleway h5 text-muted">Minutes</p>
-                    </div>
-                    <div class="col-6 col-sm-3 text-center">
-                        <p class="h1 text-dark caveat">43</p>
-                        <p class="raleway h5 text-muted">Second</p>
-                    </div>
+                <div class="timer row" id="countdown">
+                    
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- =============== Venue =============== -->
+    <div class="container mb-3 mb-md-5 pt-4 venue-wrapper">
+        <div class="row">
+            <div class="col-12 mb-3">
+                <p class="h2 text-center dosis text-secondary">Venue</p>
+                <hr class="w-25">
+            </div>
+            <div class="col-12">
+                <p class="text-center caveat text-dark h2" id="event-venue"></p>
+                <p class="text-center caveat text-secondary h2" id="event-time-onwards"></p>
+            </div>
+        </div>
+    </div>
     
-    <!-- --------------------------- Events --------------------------- -->
+    <!-- =============== Events =============== -->
     <div class="container mb-3 mb-md-5 pt-4 events-wrapper" id="events">
         <div class="row justify-content-center">
             <div class="col-12 mb-3">
                 <p class="h2 text-center dosis text-secondary">Events</p>
                 <hr class="w-25">
             </div>
-            <div class="col-12 col-md-10 col-lg-8 event-card my-md-3">
-                <div class="card mb-3 mb-md-0 shadow-3 border-0 text-center bg-white rounded">
-                    <div class="row">
-                        <div class="col-12 col-md-6 pr-md-0">
-                            <img class="w-100 h-100 rounded-left" src="http://via.placeholder.com/535x285" alt="Card image cap">
-                        </div>
-                        <div class="col-12 col-md-6 position-relative py-4">
-                            <div class="pb-4 px-3">
-                                <p class="caveat h2">This is Event</p>
-                                <p class="raleway">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, alias!</p>
-                                <div class="position-absolute event-action-group w-100">
-                                    <button class="btn btn-light text-primary"><i class="fa fa-map-marker fa-lg"></i></button>
-                                    <button class="btn btn-light text-primary"><i class="fa fa-users fa-lg"></i></button>
-                                    <button class="btn btn-light text-primary"><i class="fa fa-calendar fa-lg"></i></button>
-                                    <button class="btn btn-light text-primary"><i class="fa fa-cab fa-lg"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-10 col-lg-8 event-card my-md-3">
-                <div class="mb-3 mb-md-0 shadow-3 border-0 text-center bg-white rounded">
-                    <div class="row">
-                        <div class="col-12 col-md-6 position-relative py-4 order-2 order-md-1">
-                            <div class="pb-4 px-3">
-                                <p class="caveat h2">This is Event</p>
-                                <p class="raleway">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, alias!</p>
-                                <div class="position-absolute event-action-group w-100">
-                                    <button class="btn btn-light text-primary"><i class="fa fa-map-marker fa-lg"></i></button>
-                                    <button class="btn btn-light text-primary"><i class="fa fa-users fa-lg"></i></button>
-                                    <button class="btn btn-light text-primary"><i class="fa fa-calendar fa-lg"></i></button>
-                                    <button class="btn btn-light text-primary"><i class="fa fa-cab fa-lg"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 pl-md-0 order-md-2">
-                            <img class="w-100 h-100 rounded-right" src="http://via.placeholder.com/535x285" alt="Card image cap">
-                        </div>
-                    </div>
+            <div class="col-12">
+                <div class="row" id="all-events">
+
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- --------------------------- Gallery --------------------------- -->
+    <!-- =============== Gallery =============== -->
     <div class="container mb-3 mb-md-5 pt-4 gallery-wrapper" id="gallery">
         <div class="row">
             <div class="col-12 mb-3">
@@ -254,7 +221,7 @@
         </div>
     </div>
 
-    <!-- --------------------------- Wishes --------------------------- -->
+    <!-- =============== Wishes =============== -->
     <div class="container mb-3 mb-md-5 pt-4 wishes-wrapper" id="wishes">
         <div class="row">
             <div class="col-12 mb-3">
@@ -302,7 +269,7 @@
     </div>
     
    
-    <!-- --------------------------- Modals Section --------------------------- -->
+    <!-- =============== Modals Section =============== -->
 
     <!-- Add Wishes Modal -->
     <div class="modal fade" id="addWishes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -363,11 +330,16 @@
         </div>
     </div>
 
+    <script type="text/javascript">
+        page_params={"user_id":"22","user_type":"2","APP":"KLICKINVITE","SESSION_TIMEOUT_AFTER":54000,"verified":"1","SESSION_VALID_TILL":1532497530,"KLICKINVITE_PREVIEW":true,"guest_name":"Guest Name","order_id":"66","grp_flipbook":"https:\/\/www.youtube.com\/embed\/D3MGf1d2bUo?&rel=0&showinfo=0\t\t\t\t\t\t$(","flipbook_autoplay":"0","video_controls":"0","auto_approve_comments":1,"views_till_now":17,"views_allowed":24000,"only_ecard":0,"add_to_calendar":1,"ask_rsvp":1,"rsvp_ques":{"q1":1,"q2":0,"q3":0,"q4":0},"ask_driver_coupon":1,"show_gallery":2,"allow_comments":1,"events":[{"id":"81","name":"Wedding Ceremony","starts":"2017-11-16 18:30:00","ends":"2017-11-30 17:24:00","is_primary":1,"venue_add":"Hyatt Regency Delhi, New Delhi, Delhi, India","venue_map":"https:\/\/maps.google.com\/?q=Hyatt Regency Delhi, New Delhi, Delhi, India","driver_coupons":1,"rsvp":1,"is_visible":1,"img":"..\/resources\/custom\/66\/event_pics\/hXLcQSx.jpeg"},{"id":"87","name":"asdfghm","starts":"2017-11-23 20:00:00","ends":"2017-11-23 22:30:00","is_primary":0,"venue_add":"Secunderabad, Telangana, India","venue_map":"https:\/\/maps.google.com\/?q=Secunderabad, Telangana, India","driver_coupons":1,"rsvp":1,"is_visible":1,"img":"..\/resources\/custom\/66\/event_pics\/WGmMPEr.jpg"},{"id":"89","name":"sadfgnm","starts":"2018-02-21 11:34:00","ends":"0000-00-00 00:00:00","is_primary":0,"venue_add":"Thiruvananthapuram, Kerala, India","venue_map":"https:\/\/maps.google.com\/?q=Thiruvananthapuram, Kerala, India","driver_coupons":1,"rsvp":1,"is_visible":1,"img":"..\/theme-1\/images\/event_placeholder.png"},{"id":"100","name":"bg23123","starts":"2018-04-30 15:40:00","ends":"0000-00-00 00:00:00","is_primary":0,"venue_add":"","venue_map":"","driver_coupons":1,"rsvp":1,"is_visible":1,"img":"..\/theme-1\/images\/event_placeholder.png"}],"subdomain":"One-weds-Two","page_title":"Invitation : Oneoneoneone Weds Two","event_category":"wedding","invitation_side":"bride_side","bride_name":"Oneoneoneone","groom_name":"Two","host_name":"Vikas Raj","greeting_msg":{"title":"Dear Guest Name ji","msg_format":"We request the honour of your presence at the event.lkjadshadskahsl aldkfhalkdfsj askdjfh asdfkjasdf kajdhfiasu\nehaksdfoasdfho euhfkajhsdfoh aka eheikhaf."},"device_type":"Desktop","os":"Unknown OS Platform","browser":"Unknown Browser","verification_key":"8k46opdvhhC7pCBmQE2fb8ddxd1fvFLN","preview_id":473,"theme":"1","t1_slider_pics":[".\/resources\/custom\/66\/slider\/y3DFumQ.jpg",".\/resources\/custom\/66\/slider\/W1riQpU.jpg",".\/resources\/custom\/66\/slider\/cTNgz5D.jpg"],"t1_invite_page_heading":"Invitation","t1_home_page_heading_1":"One","t1_home_page_heading_2":"&","t1_home_page_heading_3":"Two","t1_date_text_custom":"are getting married on","t1_countdown_text_1":"Tying the knot in","t1_countdown_text_2":"Happily married since","t1_host_details_title":"Hosted By","t1_host_details":"Sanjeev Kumar & Anand Prakash Gupta\nVikas RAj\n\nRaj","t1_cmt_pg_heading":"Wishes","t1_cmt_pg_btn_txt":"Send Your Wishes","t1_cmt_pg_empty_txt":"Be the first to wish the Couple","t1_gallery_pg_heading":"Gallery","t1_gallery_pg_btn_txt":"Add a Picture","t1_gallery_page_empty_txt_1":"No pictures to show!","t1_gallery_page_empty_txt_2":"Be the first to add a picture!","t1_highlight_heading_2":"0","t1_invite_button":"View Invite","t1_gallery_button":"Gallery","t1_wishes_button":"Wishes","t1_show_couple_desc_section":"0","t1_couple_desc_pic":null,"t1_couple_desc_text":null,"t1_show_family_1":"0","t1_show_family_2":"0","t1_family_1_desc_text":null,"t1_family_2_desc_text":null,"t1_couple_pic_comment_page":null,"t1_show_graphic_1":"1","t1_show_graphic_2":"1","t1_show_graphic_3":"1","t1_show_graphic_4":"1","t1_show_graphic_5":"1","t1_show_graphic_6":"1","t1_show_graphic_7":"1","t1_show_graphic_8":"1","t1_show_graphic_9":"1","t1_navbar_label_1":"Home","t1_navbar_label_2":"Invite","t1_navbar_label_3":"Wishes","t1_navbar_label_4":"Gallery","t1_color_css":"2_6a11cb.css","t1_header_logo":".\/resources\/custom\/66\/header_images\/cuAyEDy.jpg","t1_footer_logo":".\/resources\/custom\/66\/footer_images\/2V8Cct5.png"};
+    </script>
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.3/moment-with-locales.min.js"></script>
     <script src="./assets/js/theme.js" defer="defer"></script>
 </body>
 </html>
