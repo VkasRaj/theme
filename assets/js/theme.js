@@ -240,7 +240,7 @@ if (events.length) {
                             '<div class="card mb-3 mb-md-0 shadow-3 border-0 text-center bg-white rounded">'+
                                 '<div class="row">'+
                                     '<div class="col-12 col-md-6 pr-md-0">'+
-                                        '<img class="w-100 h-100 rounded-left" src="http://via.placeholder.com/535x285" alt="Card image cap">'+
+                                        '<img class="w-100 h-100 rounded-left" src="'+event.img+'" alt="Card image cap">'+ // 535x285
                                     '</div>'+
                                     '<div class="col-12 col-md-6 position-relative py-4">'+
                                         '<div class="pb-4 px-3">'+
@@ -287,7 +287,7 @@ if (events.length) {
                                         '</div>'+
                                     '</div>'+
                                     '<div class="col-12 col-md-6 pl-md-0 order-md-2">'+
-                                        '<img class="w-100 h-100 rounded-right" src="http://via.placeholder.com/535x285" alt="Card image cap">'+
+                                        '<img class="w-100 h-100 rounded-right" src="'+event.img+'" alt="Card image cap">'+
                                     '</div>'+
                                 '</div>'+
                             '</div>'+
